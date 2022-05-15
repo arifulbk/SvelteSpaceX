@@ -49,11 +49,9 @@
 
     get_launchpads();   
     // onMount(async () => {
-
     // });
 </script>
 <main>
     <div style="height:500px;" id="map-canvas" class="relative w-full rounded h-600-px container mx-auto p-6">
-
     </div>
 </main>

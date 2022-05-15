@@ -33,6 +33,5 @@
             <label class="underline">Year founded</label>
             <p class="text-xl font-light leading-relaxed mt-6 mb-4 text-gray-800">{company_name.founded}</p>
         </div>       
-        
 	</div>
 </main>

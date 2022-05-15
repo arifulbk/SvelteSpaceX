@@ -1,23 +1,13 @@
 <script>
-   export let launches = []; // {"name":"SpaceX","founder":"Elon Musk","founded":2002,"employees":7000,"vehicles":3,"launch_sites":3,"test_sites":1,"ceo":"Elon Musk","cto":"Elon Musk","coo":"Gwynne Shotwell","cto_propulsion":"Tom Mueller","valuation":27500000000,"headquarters":{"address":"Rocket Road","city":"Hawthorne","state":"California"},"links":{"website":"https://www.spacex.com/","flickr":"https://www.flickr.com/photos/spacex/","twitter":"https://twitter.com/SpaceX","elon_twitter":"https://twitter.com/elonmusk"},"summary":"SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets."};
-    // fetch("https://api.spacexdata.com/v3/launches").then(function(response){
-    //     console.log(response);
-    //     launches = response;
-    // });
-
+   export let launches = []; 
 	async function fetch_launch_data() {
 		const response = await fetch(`https://api.spacexdata.com/v3/launches`);
-        
 		const obj = await response.json();
 		launches = obj;
-		// return obj.name;
 	}
     fetch_launch_data();
 </script>
-<main>
-
-    
-
+<main>   
     <div class="grid grid-cols-4 gap-4 p-6">
         <div class="flex justify-center">
             <div class="mb-3 xl:w-96">
@@ -71,7 +61,6 @@
         </div>
         </div>
     </div>
-    
 
     <div class="grid grid-cols-4 gap-4 p-6">
         {#each launches as launch}
@@ -83,5 +72,4 @@
             </div>
         {/each}
     </div>
-    
 </main>
