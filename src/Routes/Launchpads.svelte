@@ -1,6 +1,6 @@
 
 <script>
-    import { onMount } from "svelte";
+    // import { onMount } from "svelte";
     export let launchpads = [];
     launchpads = []; 
     async function get_launchpads() {
@@ -10,10 +10,9 @@
         let google = window.google;
         let map = document.getElementById("map-canvas");
         
-        let lat = launchpads[0].location.latitude; //40.748817
-        let lng = launchpads[0].location.longitude; //-73.985428
+        let lat = launchpads[0].location.latitude;
+        let lng = launchpads[0].location.longitude;
         const myLatlng = new google.maps.LatLng(lat, lng);
-        //const myLatlng = new google.maps.LatLng(40.748817, -73.985428);
         const mapOptions = {
             zoom: 2,
             scrollwheel: false,
@@ -30,7 +29,7 @@
                 position:  new google.maps.LatLng(launchpads[i].location.latitude, launchpads[i].location.longitude),
                 map: map,
                 animation: google.maps.Animation.DROP,
-                title: "Launchpad location!",
+                title: "Launchpad location",
             });
         }        
         
