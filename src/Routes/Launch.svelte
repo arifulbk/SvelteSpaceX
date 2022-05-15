@@ -68,7 +68,12 @@
             <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                 <h5 class="p-6 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{launch.mission_name}</h5>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 px-px">{launch.details == null ? 'Details not available' : launch.details}</p>
+                <label for="" class="text-left">Date</label>
                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 px-px">{launch.launch_date_utc == null ? 'Date not available' : new Date(launch.launch_date_utc).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})}</p>
+                <label for="" class="text-left">Rocket</label>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 px-px">{launch.rocket.rocket_name == null ? 'Details not available' : launch.rocket.rocket_name}</p>
+                <label for="" class="text-left">Rocket type</label>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 px-px">{launch.rocket.rocket_type == null ? 'Details not available' : launch.rocket.rocket_type}</p>
             </div>
         {/each}
     </div>
