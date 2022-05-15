@@ -35,9 +35,10 @@
 	<!-- <h1>Hello {name}!</h1> -->
 	<!-- <p class="bg-amber-300">Initial SpaceX application!</p> -->
 	
-	<nav class="p-5 bg-black shadow md:flex md:items-center md:justify-between">
-		<ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute text-white  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+	<nav  class="p-5 bg-black shadow md:flex md:items-center md:justify-between">
+		<ul class="sm:flex md:flex md:items-center z-[-1] md:z-auto md:static absolute text-white  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
 			<li class="mx-4 my-6 md:my-0">
+			<!-- svelte-ignore a11y-invalid-attribute -->
 			<a href="" class="text-xl hover:text-cyan-500 duration-500 text-white">Company Info</a>
 			</li>
 			<li class="mx-4 my-6 md:my-0">
@@ -49,6 +50,8 @@
 		</ul>
 	</nav>
 
+
+	
 	<!-- <div class="">
 		<h1>{company_name.name}</h1>
 		<p>{company_name.summary}</p>
