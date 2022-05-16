@@ -2,6 +2,7 @@
 <script>
     // import { onMount } from "svelte";
     export let launchpads = [];
+    let window_height = window.innerHeight;
     launchpads = []; 
     async function get_launchpads() {
 		const response = await fetch(`https://api.spacexdata.com/v3/launchpads`);
@@ -51,6 +52,6 @@
     // });
 </script>
 <main>
-    <div style="height:500px;" id="map-canvas" class="relative w-full rounded h-600-px container mx-auto p-6">
+    <div style="height:{window_height}px;" id="map-canvas" class="relative w-full rounded h-600-px container mx-auto p-6">
     </div>
 </main>
