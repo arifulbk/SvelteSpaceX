@@ -15,9 +15,6 @@
         address = company_name.headquarters.address + ', '+ company_name.headquarters.city + ', ' +company_name.headquarters.state;
 		// return obj.name;
 	}
-
-    
-
 	fetch_company_data();
 </script>
 <main>
